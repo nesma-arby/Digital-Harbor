@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+.App {
+  text-align: center;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+}
+
+ul{
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+
+.blackTemplate {
+  background-color: #000;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blackTemplate p {
+  margin: 0;
+}
+
+.blackTemplate .first {
+  position: absolute;
+  font-size: 1.5rem;
+  width: 130px;
+  text-align: left;
+  padding: 10px;
+  line-height: 1;
+  top: 0;
+  left: 0;
+}
+
+.blackTemplate .first::after {
+  content: '';
+  display: block;
+  width: 101px;
+  height: 2px;
+  background: #FB5F00;
+  margin-top: 5px;
+}
+
+.blackTemplate .lenovo {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.blackTemplate .lenovo p {
+  display: inline-block;
+  width: min-content;
+  line-height: 1.5;
+  vertical-align: top;
+  padding: 5px;
+}
+
+.blackTemplate .lenovo img {
+  max-width: 100%;
+  height: auto;
+  width: 40px;
+}
+
+.blackTemplate .ram {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+  width: 80px;
+}
+
+.blackTemplate .last {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  padding: 5px;
+}
+
+
+.formContainer{
+  background-color: #3B3B3B;
+  color: #fff;
+}
+
+.form{
+  padding: 30px;
+  overflow: hidden;
+}
+
+.form p{
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.form input{
+  margin-bottom: 20px;
+}
+
+.form button{
+  background-color: #FB5F00;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.form .largeBtn{
+  width: 100%;
+}
+
+.form a{
+  color: #fff !important;
+  margin-bottom: 20px;
+}
+
+.formContainer::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #FB5F00;
+  margin-top: 5px;
+}
+
+.register{
+  margin: 40px auto;
+}
+
+.form-check-label{
+  vertical-align: middle;
+  padding-left: 5px;
+  text-align: left;
+}
+
+.myAccount{
+  background-color: #3B3B3B;
+  padding: 20px;
+  width: 33%;
+}
+
+.myAccount h3{
+  display: inline-block;
+}
+
+.myAccount button{
+  background-color: #FB5F00;
+}
+
+.myAccount ul{
+  text-align: left;
+  margin-top: 20px;
+}
+
+.txt-left{
+  text-align: left;
+}
+
+.txt-left h3{
+  margin: 0;
+}
+
+.txt-right{
+  text-align: right;
+}
+
+.myAccount ul li{
+  padding-bottom: 10px;
+}
+
+.nav{
+  padding: 20px;
+  text-align: right;
+}
+
+.nav > li{
+  position: relative;
+  display: inline-block !important;
+  background: #FB5F00;
+  margin-right: 5px;
+  border-radius: 20px;
+}
+
+.nav > li > a{
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #FB5F00 !important
+}
+
+.participate{
+  background: antiquewhite;
+  padding: 30px;
+}
+
+.participate h2{
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.participate h4{
+  margin-bottom: 30px;
+}
+
+.participate button{
+  background-color: #FB5F00;
+  border-radius: 20px;
+  color: #fff;
+}
+
+
+.speaker{
+  background: #000;
+  padding: 30px;
+  color: #fff;
+}
+
+.speaker img{
+  width: 130px;
+}
+
+.speaker h3{
+  margin: 30px 0;
+}
+
+.agenda{
+  padding: 30px;
+}
+
+.agenda h3::after{
+  content: '';
+  display: block;
+  background: #e6e6e6;
+  width: 50%;
+  height: 1px;
+  margin: 10px auto;
+}
+
+.agenda ul{
+  display: inline-block;
+}
+
+.agenda ul li{
+  margin-bottom: 10px;
+}
+
+.agenda ul li p{
+  display: inline-block;
+  margin: 0;
+}
+
+.agenda ul:first-of-type{
+  margin-right: 33px;
+  vertical-align: top;
+}
+
+.agenda ul:last-child{
+  text-align: left;
+}
+
+.activities{
+  padding: 30px;
+  background-color: #3B3B3B;
+  color: #fff;
+}
+
+@media(max-width:768px){
+
+  .formContainer{
+    background-color: #000;
+  }
+
+  .blackTemplate{
+    min-height: 100%;
+  }
+
+  .formContainer::after{
+    display: none;
+  }
+
+  .form-check-label{
+    display: initial;
+  }
+
+  .form{
+    margin-top: 80px;
+  }
+
+  .myAccount{
+    width: auto;
+  }
+
+  .txt-left , .txt-right{
+    text-align: inherit;
+  }
+
+  .txt-left h3{
+    margin-bottom: 10px;
+  }
+
+  .speaker img{
+    margin-bottom: 20px;
+  }
+}
